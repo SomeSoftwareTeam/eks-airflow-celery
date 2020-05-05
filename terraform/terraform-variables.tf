@@ -1,8 +1,8 @@
 variable "broker_username" {}
 variable "broker_password" {}
 variable "docker_image_tag" {}
+variable "docker_registry_url" {}
 variable "flower_basic_auth" {}
-variable "github_docker_registry_url" {}
 variable "github_organization" {}
 variable "github_token" {}
 variable "include_dag_examples" {}

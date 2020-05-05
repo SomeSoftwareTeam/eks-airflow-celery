@@ -28,7 +28,7 @@ resource "kubernetes_deployment" "scheduler" {
         }
 
         container {
-          image = "${var.github_docker_registry_url}:${var.docker_image_tag}"
+          image = "${var.docker_registry_url}:${var.docker_image_tag}"
           name  = "scheduler"
 
           args = ["scheduler"]
