@@ -12,6 +12,7 @@ resource "aws_db_instance" "airflow" {
   engine               = "mysql"
   engine_version       = "5.7"
   instance_class       = "db.t2.micro"
+  skip_final_snapshot  = true
   name                 = "airflow"
   username             = var.mysql_username
   password             = var.mysql_password
